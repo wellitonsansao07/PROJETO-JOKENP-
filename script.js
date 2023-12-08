@@ -5,6 +5,19 @@ const machineScore = document.querySelector('#machine-score')
 let humanScoreNumber = 0
 let machineScoreNumber = 0
 
+/* 
+humanScoreNumber  -> Camel Case
+GAME_OPTIONS      -> Snake Case
+*/
+
+
+//ENUMS
+const GAME_OPTIONS ={
+    ROCK: "rock",
+    PAPER: "paper",
+    SCISSORS: "scissors"
+}
+
 const playHuman = (humanChoice) => {
 
     playTheGame(humanChoice, playMachine())
